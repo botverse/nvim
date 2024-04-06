@@ -28,6 +28,15 @@ return vim.g.started_by_firenvim and {}
         inc_rename = true, -- enables an input dialog for inc-rename.nvim
         lsp_doc_border = true, -- add a border to hover docs and signature help
       },
+      views = {
+        mini = {
+          relative = "win",
+          position = {
+            row = 1,
+            col = "100%",
+          },
+        },
+      },
     },
     dependencies = {
       "MunifTanjim/nui.nvim",
@@ -37,6 +46,8 @@ return vim.g.started_by_firenvim and {}
           background_colour = "#000000",
           render = "compact",
           timeout = 3000,
+          fps = 144,
+          top_down = false,
         },
       },
     },
